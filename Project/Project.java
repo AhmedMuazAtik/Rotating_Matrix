@@ -8,7 +8,7 @@ package project;
 
 import java.util.Scanner;
 
-public class Project {
+public class Test {
 
     public static void stepNumber(int arr[]) {
         int step;
@@ -81,7 +81,7 @@ public class Project {
         }
         System.out.println("----------------------------------");
         System.out.println(step + " Kez donduruldukten sonra: ");
-        if (direction == -1) {
+        if (direction == 1) {
 
             for (int i = 1; i < rotatedMatrix.length - 1; i++) { //Matrix'in ortasinda kalan rotate etmeyecek sayilar rotatedMatrix'e assign ediliyor.
                 for (int j = 1; j < rotatedMatrix[i].length - 1; j++) {
@@ -130,7 +130,7 @@ public class Project {
             System.out.println();
             System.out.println("----------------------------------");
 
-        } else if (direction == 1) {
+        } else if (direction == -1) {
 
             for (int i = 1; i < rotatedMatrix.length - 1; i++) { //Matrix'in ortasinda kalan rotate etmeyecek sayilar rotatedMatrix'e assign ediliyor.
                 for (int j = 1; j < rotatedMatrix[i].length - 1; j++) {

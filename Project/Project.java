@@ -10,7 +10,7 @@ import java.util.Scanner;
 
 public class Project {
 
-    public static void adimSayisi(int arr[]) {
+    public static void stepNumber(int arr[]) {
         int step;
         Scanner scan = new Scanner(System.in);
         System.out.print("Adim sayisi: ");
@@ -21,7 +21,7 @@ public class Project {
         System.out.println("----------------------------------");
     }
 
-    public static void matrisOlustur(int arr[]) {
+    public static void createMatrix(int arr[]) {
         int satir;
         int sutun;
         int random;
@@ -40,7 +40,7 @@ public class Project {
         System.out.println("----------------------------------");
     }
 
-    public static void yon(int arr[]) {
+    public static void matrixDirection(int arr[]) {
         System.out.print("Direction: ");
         Scanner scan = new Scanner(System.in);
         int direction = scan.nextInt();
@@ -61,7 +61,7 @@ public class Project {
         }
     }
 
-    public static void dondur(int arr[]) {
+    public static void rotateMatrix(int arr[]) {
         int satir = arr[0];
         int sutun = arr[1];
         int direction = arr[2];
@@ -199,16 +199,16 @@ public class Project {
             System.out.print("-> ");
             input = scan.nextInt();
             if (input == 1) { //Eger kullanici 1 girerse uygulama calisir.
-                dondur(array);
+                rotateMatrix(array);
 
             } else if (input == 2) { //Eger kullanici 2 girerse olsturulacak matrix'in ozelliklerini girer.
-                matrisOlustur(array);
+                createMatrix(array);
 
             } else if (input == 3) { //Eger kullanici 3 girerse matrix'in hangi yone donecegini secer.
-                yon(array);
+                matrixDirection(array);
 
             } else if (input == 4) { //Eger kullanici 4 girerse matrix'in kac kez donecegini secer.
-                adimSayisi(array);
+                stepNumber(array);
 
             } else if (input == 5) { //Eger kullanici 5 girerse uygulamadan cikilir.
                 System.out.println("----------------------------------");

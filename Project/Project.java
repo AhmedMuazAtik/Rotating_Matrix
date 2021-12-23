@@ -10,7 +10,7 @@ import java.util.Scanner;
 
 public class Test {
 
-    public static void stepNumber(int arr[]) {
+    public static void matrixStepNumber(int arr[]) {
         int step;
         Scanner scan = new Scanner(System.in);
         System.out.print("Adim sayisi: ");
@@ -208,7 +208,7 @@ public class Test {
                 matrixDirection(array);
 
             } else if (input == 4) { //Eger kullanici 4 girerse matrix'in kac kez donecegini secer.
-                stepNumber(array);
+                matrixStepNumber(array);
 
             } else if (input == 5) { //Eger kullanici 5 girerse uygulamadan cikilir.
                 System.out.println("----------------------------------");
